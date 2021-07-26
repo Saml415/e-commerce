@@ -46,20 +46,20 @@ router.post("/", async (req, res) => {
   // create a new category
 });
 
-router.put("/:id", async  (req, res) => {
+router.put("/:id", async (req, res) => {
   // update a category by its `id` value
-    try {
+  try {
     categoryData = await Category.update(req.body, {
-    where: {
-      id: req.params.id,
-    },
+      where: {
+        id: req.params.id,
+      },
     });
     if (!categoryData[0]) {
-      res.status(404).json({message: 'No category with this id!'});
+      res.status(404).json({ message: "No category with this id!" });
       return;
     }
     res.status(200).json(categoryData);
-  }catch (err) {
+  } catch (err) {
     res.status(500).json(err);
   }
 });
@@ -79,7 +79,7 @@ router.delete("/:id", async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-  // delete a category by its `id` value
+  // delete a category by its `id` values
 });
 
 module.exports = router;
