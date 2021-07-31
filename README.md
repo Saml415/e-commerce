@@ -13,6 +13,7 @@
 ## Description
 
 This is a repository for the back end of a e-commerce site. With this code front end client side apps created by others can be used to communicate with a fully functioning backend. This backend is capable of fullfiling GET, POST, PULL, and DELETE requests. It is simply up another developer to make a front end that can act as client for these requests
+https://www.youtube.com/watch?v=EjITdtuBYc8
 
 ## Installation Guide
 
